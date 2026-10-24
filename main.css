@@ -26,7 +26,10 @@ nav {
     align-items: center;
     padding: 5px 10px 5px 10px;
     border-bottom: 5px solid white;
+}
 
+.nav-container button {
+    display: none;
 }
 
 .nav-container img{
@@ -421,6 +424,10 @@ a:focus {
         height: auto;
     }
 
+    .hamburger {
+        display: block;
+    }
+
     .nav-list {
         display: none;
     }
@@ -428,6 +435,7 @@ a:focus {
     .nav-container button {
         background: none;
         border: none;
+        display: block;
     }
 
     .nav-container button img{
