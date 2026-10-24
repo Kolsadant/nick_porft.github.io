@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght,MONO@0,300..800,1;1,300..800,1&family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 
+
 body {
     background-color: #3A3A3A;
     font-family: Roboto, sans-serif;
@@ -26,6 +27,11 @@ nav {
     padding: 5px 10px 5px 10px;
     border-bottom: 5px solid white;
 
+}
+
+.nav-container img{
+    width: inherit;
+    height: auto;
 }
 
 .nav-list {
@@ -321,7 +327,7 @@ nav {
     opacity: 1;
 }
 
-button {
+.cases-slider button {
     background: none;
     border: none;
     position: absolute;
@@ -384,21 +390,15 @@ button {
 .footer-vk,
 .footer-whatsapp {
     display: flex;
-    width: 60%;
+    width: 80%;
+    height: auto;
     justify-content: flex-start;
-    gap: 70px;
+    gap: 170px;
 }
 
-/*.footer-text div img {*/
-/*    align-self: flex-start;*/
-/*    justify-self: center;*/
+/*@media (max-width: 834px) {*/
+/*    */
 /*}*/
-
-/*.footer-text div p {*/
-/*    align-self: flex-end;*/
-/*    justify-self: center;*/
-/*}*/
-
 
 a,
 a:visited,
@@ -409,3 +409,513 @@ a:focus {
     text-decoration: none;
 }
 
+@media (max-width: 834px) {
+
+    .nav-container {
+        padding: 10px;
+
+    }
+
+    .nav-container img{
+        width: 340px;
+        height: auto;
+    }
+
+    .nav-list {
+        display: none;
+    }
+
+    .nav-container button {
+        background: none;
+        border: none;
+    }
+
+    .nav-container button img{
+        width: 25px;
+        height: auto;
+    }
+
+    .about-me-container {
+        border-radius: 0 0 12px 12px;
+    }
+
+    .about-me-subcontainer {
+        margin-top: 36px;
+        border-radius: 0 0 12px 12px;
+    }
+
+    .about-me-main-text {
+        font-size: 20px;
+        border-radius: 0 0 12px 12px;
+    }
+
+    .about-me-description-hi {
+        font-size: 29px;
+    }
+
+    .about-me-description-name {
+        font-size: 26px;
+    }
+
+    .about-me-description-text-p {
+        font-size: 23px;
+    }
+
+    .about-me-photo img{
+        width: 350px;
+        height: auto;
+    }
+
+    .about-me-abilities-list li {
+        font-size: 30px;
+    }
+
+    .about-me-abilities-list {
+        padding-left: 20px;
+    }
+
+    .standarts-container {
+        margin-bottom: 40px;
+    }
+
+    .standarts-container-description {
+        gap: 35px;
+    }
+
+    .standarts-container h2 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .standarts-container-description div {
+        background: linear-gradient(110deg, #C5C5C5 37%, #6C6C6C 35%);
+        border-radius: 12px;
+        gap: 30px;
+        padding: 16px 15px 16px 15px;
+    }
+
+    .standarts-container-description h3 {
+        font-size: 24px;
+        width: 30%;
+    }
+
+    .standarts-container-description p {
+        font-size: 24px;
+        width: 55%;
+    }
+
+    .my-tech-stack-window {
+        border: solid 8px #606060;
+        border-radius: 12px;
+        margin-right: 16px;
+        margin-left: 16px;
+    }
+
+    .my-tech-stack-buttons {
+        gap: 15px;
+        padding-top: 15px;
+        padding-right: 15px;
+    }
+
+    .my-tech-stack-buttons img{
+        width: 3%;
+        height: auto;
+    }
+
+    .my-tech-stack-init {
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+
+    .my-tech-stack-result {
+        border: solid 7px #555555;
+        border-radius: 12px;
+        margin-left: 24px;
+        margin-right: 24px;
+        margin-bottom: 24px;
+        font-size: 36px;
+        padding-right: 35px;
+        padding-left: 35px;
+        padding-bottom: 20px;
+    }
+
+    .my-tech-stack-result-lang-img {
+        gap: 37px;
+    }
+
+    .my-tech-stack-result-lang-img img{
+        width: 17%;
+        height: auto;
+    }
+
+    .my-tech-stack-result-layout-grid {
+        width: 40%;
+        margin-right: auto;
+        margin-left: auto;
+        column-gap: 15px;
+    }
+
+    .my-tech-stack-result-layout-grid div {
+        height: 30px;
+    }
+
+    .my-tech-stack-result-layout-grid-item-1 {
+        grid-column: span 2;
+    }
+
+    .my-tech-stack-result-layout-grid-item-2 {
+        grid-column: span 7;
+    }
+
+    .my-tech-stack-result-layout-grid-item-3 {
+        grid-column: span 3;
+    }
+
+    .my-tech-stack-result-layout-grid-item-4 {
+        grid-column: span 3;
+    }
+
+    .my-tech-stack-result-layout-grid-item-5 {
+        grid-column: span 9;
+    }
+
+    .my-tech-stack-result-cms-img img {
+        width: 20%;
+        height: auto;
+    }
+
+    .my-tech-stack-result-instruments-img {
+        gap: 30px;
+    }
+
+    .my-tech-stack-result-instruments-img img{
+        width: 20%;
+        height: auto;
+    }
+
+    .cases-slider {
+        border-radius: 12px 12px 0 0;
+    }
+
+    .cases-slider button img{
+        width: 50px;
+        height: auto;
+    }
+
+    .cases-title {
+        font-size: 35px;
+    }
+
+
+    .cases-slider-container {
+        padding-top: 60px;
+        padding-bottom: 50px;
+    }
+
+    .cases-slider-line {
+        gap: 60px;
+    }
+
+    .cases-slider-line img {
+        width: 380px;
+        height: auto;
+    }
+
+    .cases-slider-item {
+        width: 60%;
+        height: auto;
+    }
+
+    .cases-slider button {
+        background: none;
+        border: none;
+        position: absolute;
+        top: 240px;
+    }
+
+    .slider-btn-prev {
+        left: 20px;
+    }
+
+    .slider-btn-next {
+        right: 20px;
+    }
+
+    .cases-text {
+        font-size: 40px;
+        border-radius: 0 0 12px 12px;
+        gap: 40px;
+    }
+
+    #task {
+        padding-top: 40px;
+    }
+
+    #requirements {
+        padding-bottom: 40px;
+    }
+
+    .footer {
+        padding-bottom: 40px;
+    }
+
+    .footer-title {
+        font-size: 35px;
+        text-align: center;
+    }
+
+    .footer-text {
+        font-size: 45px;
+        gap: 25px;
+    }
+
+    .footer-tg,
+    .footer-vk,
+    .footer-whatsapp {
+        display: flex;
+        width: 80%;
+        justify-content: flex-start;
+        gap: 60px;
+        align-items: center;
+        height: auto;
+    }
+
+    .footer-text img {
+        width: 20%;
+        height: auto;
+    }
+}
+
+@media (max-width: 405px) {
+    .nav-container img{
+        width: 220px;
+        height: auto;
+    }
+
+    .about-me-main-text {
+        font-size: 12px;
+        border-radius: 0 0 12px 12px;
+    }
+
+    .about-me-description-hi {
+        font-size: 14px;
+    }
+
+    .about-me-description-name {
+        font-size: 12px;
+    }
+
+    .about-me-description-text-p {
+        font-size: 11px;
+    }
+
+    .about-me-photo img{
+        width: 180px;
+        height: auto;
+    }
+
+    .about-me-abilities-list li {
+        font-size: 16px;
+    }
+
+    .about-me-abilities-list {
+        padding-left: 0;
+    }
+
+    .standarts-container {
+        margin-bottom: 30px;
+    }
+
+    .standarts-container-description {
+        gap: 35px;
+    }
+
+    .standarts-container h2 {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .standarts-container-description div {
+        background: linear-gradient(110deg, #C5C5C5 38%, #6C6C6C 35%);
+        border-radius: 12px;
+        gap: 30px;
+        padding: 16px 15px 16px 15px;
+    }
+
+    .standarts-container-description h3 {
+        font-size: 15px;
+        width: 30%;
+    }
+
+    .standarts-container-description p {
+        font-size: 15px;
+        width: 55%;
+    }
+
+    .my-tech-stack-window {
+        border: solid 6px #606060;
+        border-radius: 12px;
+        margin-right: 13px;
+        margin-left: 13px;
+    }
+
+    .my-tech-stack-buttons {
+        gap: 10px;
+        padding-top: 15px;
+        padding-right: 15px;
+    }
+
+    .my-tech-stack-buttons img{
+        width: 6%;
+        height: auto;
+    }
+
+    .my-tech-stack-init {
+        font-size: 20px;
+        margin-bottom: 16px;
+    }
+
+    .my-tech-stack-result {
+        border: solid 4px #555555;
+        border-radius: 12px;
+        margin-left: 16px;
+        margin-right: 16px;
+        margin-bottom: 16px;
+        font-size: 20px;
+        padding-right: 25px;
+        padding-left: 25px;
+        padding-bottom: 15px;
+    }
+
+    .my-tech-stack-result-lang-img {
+        gap: 20px;
+    }
+
+    .my-tech-stack-result-lang-img img{
+        width: 19%;
+        height: auto;
+    }
+
+    .my-tech-stack-result-layout-grid {
+        width: 80%;
+        margin-right: auto;
+        margin-left: auto;
+        column-gap: 15px;
+    }
+
+    .my-tech-stack-result-layout-grid div {
+        height: 20px;
+    }
+
+    .my-tech-stack-result-layout-grid-item-1 {
+        grid-column: span 4;
+    }
+
+    .my-tech-stack-result-layout-grid-item-2 {
+        grid-column: span 4;
+    }
+
+    .my-tech-stack-result-layout-grid-item-3 {
+        grid-column: span 4;
+    }
+
+    .my-tech-stack-result-layout-grid-item-4 {
+        grid-column: span 6;
+    }
+
+    .my-tech-stack-result-layout-grid-item-5 {
+        grid-column: span 6;
+    }
+
+    .cases-slider {
+        border-radius: 12px 12px 0 0;
+    }
+
+    .cases-slider button img{
+        width: 30px;
+        height: auto;
+    }
+
+    .cases-title {
+        font-size: 24px;
+    }
+
+
+    .cases-slider-container {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .cases-slider-line {
+        gap: 40px;
+    }
+
+    .cases-slider-line img {
+        width: 150px;
+        height: auto;
+    }
+
+    .cases-slider-item {
+        width: 40%;
+        height: auto;
+    }
+
+    .cases-slider button {
+        background: none;
+        border: none;
+        position: absolute;
+        top: 105px;
+    }
+
+    .slider-btn-prev {
+        left: 10px;
+    }
+
+    .slider-btn-next {
+        right: 10px;
+    }
+
+    .cases-text {
+        font-size: 24px;
+        border-radius: 0 0 12px 12px;
+        gap: 20px;
+    }
+
+    #task {
+        padding-top: 30px;
+    }
+
+    #requirements {
+        padding-bottom: 30px;
+    }
+
+    .footer {
+        padding-bottom: 60px;
+    }
+
+    .footer-title {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .footer-text {
+        font-size: 23px;
+        gap: 25px;
+    }
+
+    .footer-tg,
+    .footer-vk,
+    .footer-whatsapp {
+        display: flex;
+        width: 80%;
+        justify-content: flex-start;
+        gap: 25px;
+        align-items: center;
+        height: auto;
+    }
+
+    .footer-text img {
+        width: 20%;
+        height: auto;
+    }
+}
